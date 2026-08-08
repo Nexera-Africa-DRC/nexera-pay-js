@@ -1,0 +1,33 @@
+{
+  "name": "@nexera/pay",
+  "version": "0.1.0",
+  "description": "Nexera Pay — API paiement RDC (Mobile Money + Carte). SDK JavaScript/TypeScript officiel.",
+  "keywords": ["nexera", "payment", "mobile-money", "mpesa", "airtel", "orange", "afrimoney", "card", "cybersource", "rdc", "congo", "payments-api", "fintech-africa"],
+  "author": "Nexera Africa <dev@nexera.africa>",
+  "license": "MIT",
+  "homepage": "https://pay.nexera.africa",
+  "repository": {"type": "git", "url": "https://github.com/nexera-africa/nexera-pay-js"},
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {"node": ">=18"},
+  "devDependencies": {
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
