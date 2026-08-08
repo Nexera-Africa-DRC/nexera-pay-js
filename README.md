@@ -1,17 +1,17 @@
-# @nexera/pay
+# nexera-pay
 
 SDK JavaScript/TypeScript officiel pour **Nexera Pay** — API paiement Payment Facilitator RDC (Mobile Money + Carte, wrapper Moko/PayDRC/Cybersource).
 
 ## Installation
 
 ```bash
-npm install @nexera/pay
+npm install nexera-pay
 ```
 
 ## Quickstart
 
 ```typescript
-import { NexeraPay } from "@nexera/pay";
+import { NexeraPay } from "nexera-pay";
 
 const nexera = new NexeraPay({
   apiKey: process.env.NEXERA_PAY_API_KEY!,   // nex_test_... ou nex_live_...
@@ -53,7 +53,7 @@ window.location.href = payment.checkout_url!;
 
 ```typescript
 import express from "express";
-import { Webhooks } from "@nexera/pay";
+import { Webhooks } from "nexera-pay";
 
 app.post("/webhooks/nexera", express.raw({ type: "application/json" }), (req, res) => {
   const signature = req.header("X-Nexera-Signature");
@@ -118,7 +118,7 @@ En mode test (clé `nex_test_...`), les MSISDN suivants déclenchent des scenari
 ## Gestion d'erreurs
 
 ```typescript
-import { NexeraPay, SignatureError, RateLimitError, ValidationError } from "@nexera/pay";
+import { NexeraPay, SignatureError, RateLimitError, ValidationError } from "nexera-pay";
 
 try {
   const p = await nexera.payments.create({ ... });

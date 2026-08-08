@@ -1,7 +1,7 @@
 /** Nexera Pay — SDK JavaScript/TypeScript officiel.
  *
  * Usage :
- *   import { NexeraPay } from "@nexera/pay";
+ *   import { NexeraPay } from "nexera-pay";
  *   const nexera = new NexeraPay({ apiKey: "nex_test_...", secret: "sk_..." });
  *   const p = await nexera.payments.create({
  *     amount: 100, currency: "CDF", method: "mobile_money",
