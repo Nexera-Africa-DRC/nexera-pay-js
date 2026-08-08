@@ -1,5 +1,11 @@
 # nexera-pay
 
+[![npm version](https://img.shields.io/npm/v/nexera-pay?style=flat-square&color=a78bfa&logo=npm)](https://www.npmjs.com/package/nexera-pay)
+[![npm downloads](https://img.shields.io/npm/dm/nexera-pay?style=flat-square&color=67e8f9)](https://www.npmjs.com/package/nexera-pay)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/nexera-pay?style=flat-square&label=bundle)](https://bundlephobia.com/package/nexera-pay)
+[![license](https://img.shields.io/npm/l/nexera-pay?style=flat-square)](./LICENSE)
+[![CI](https://img.shields.io/github/actions/workflow/status/Nexera-Africa-DRC/nexera-pay-js/publish.yml?style=flat-square&label=publish)](https://github.com/Nexera-Africa-DRC/nexera-pay-js/actions)
+
 SDK JavaScript/TypeScript officiel pour **Nexera Pay** — API paiement Payment Facilitator RDC (Mobile Money + Carte, wrapper Moko/PayDRC/Cybersource).
 
 ## Installation
